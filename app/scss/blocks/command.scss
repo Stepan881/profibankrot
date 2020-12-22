@@ -1,0 +1,93 @@
+.command {
+  background-color: $command-bg;
+  min-height: 1120px;
+
+  &__wrapper {
+    padding-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__head {
+    color: $cancellation-bg;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 0;
+    align-self: flex-end;
+
+  }
+  &__text {
+    color: $cancellation-bg;
+    font-family: "Manrope-Regular", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    opacity: 0.7;
+    align-self: flex-end;
+    margin-left: 125px;
+  }
+  &__card-wrapper {
+    width: 100%;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .command {
+
+    &__wrapper {
+      padding-top: 78px;
+    }
+
+    &__head {
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+    }
+    &__text {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 18px;
+      font-family: "Manrope-Medium", "Arial", sans-serif;
+
+    }
+    &__card-wrapper {
+      width: 83%;
+      margin: 63px auto 0;
+      
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .command {
+
+    &__wrapper {
+      padding-top: 61px;
+    }
+    &__head {
+      font-size: 25px;
+      line-height: 45px;
+      text-align: left;
+      width: 100%;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 27px;
+      width: 104%;
+      text-align: left;
+      margin: 12px -12px 0 -3px;
+    }
+    &__card-wrapper {
+      width: 88%;
+      margin: 42px auto 41px;
+      justify-content: center;
+    }
+  }
+
+}

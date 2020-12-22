@@ -1,0 +1,39 @@
+$tablet-width: 1171px;
+$mobile-width: 720px;
+
+$color: rgba(255, 255, 255, 1);
+$color-dark: rgba(175, 175, 175, 1);
+$header-bg: rgba(0, 0, 0, 0.5);
+
+$link-c: #5092ff;
+
+$first-screen-bg: rgba(21, 21, 21, 0.95);
+$first-screen-bottom: linear-gradient(to top, rgba(30, 29, 30, 1) 50px, rgba(21, 21, 21, 0) 100px);
+$first-screen-bottom-tablet: linear-gradient(to top, rgba(30, 29, 30, 1) 150px, rgba(21, 21, 21, 0) 300px);
+$first-screen-bg-bottom: rgba(30, 29, 30, 1);
+
+$input-border: #a5a4a5;
+$placeholder: #b9b9b9;
+$form-btn: linear-gradient(to bottom, #5092ff,  #003996);
+$form-btn-hover: linear-gradient(to bottom, rgba(109, 165, 255, 0),  rgba(3, 75, 191, 0));
+$form-btn-bg: linear-gradient(to bottom, #8bb7ff,  #1e1d1e);
+$form-btn-bg-hover: linear-gradient(to bottom, #abc9fa,  #3c3b3c);
+$form-checkbox: #b9b9b9;
+
+$cancellation-bg: #1e1d1e;
+$about-bg: #f4f4f4;
+$pagination-number: #6b6a6b;
+
+$affairs: #f6f6f6;
+$article-link: #ff0000;
+$article-link-btn: #5092ff;
+$article-border-dashed: #e6e6e6;
+ 
+$services-bg-popup: rgba(30, 29, 30, 0.7);
+$services-bg-popup-dark: rgba(185, 185, 185, 1);
+$question-top: linear-gradient(to bottom, rgba(30, 29, 30, 1) 20px, rgba(21, 21, 21, 0.7) 100%);
+
+$command-bg: #f5f5f5;
+$footer-bg: linear-gradient(to bottom, rgba(21, 21, 21, 0.9) 0, rgba(21, 21, 21, 0.9) 100%);
+
+$popup-bg: #5e5e5e;

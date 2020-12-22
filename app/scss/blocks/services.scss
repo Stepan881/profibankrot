@@ -1,0 +1,141 @@
+.services {
+  position: relative;
+  min-height: 914px;
+  background-color: $affairs;
+  padding-top: 46px;
+
+  &__head {
+    margin: 0;
+    color: $cancellation-bg;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  &__article {
+    width: 100%;
+    max-width: 377px;
+    min-height: 177px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    background: $color;
+    border-radius: 18px; 
+    margin-bottom: 20px;
+  }
+
+  &__article-wrapper {
+    height: calc(100% - 24px);
+    margin: 12px;
+    border-radius: 14px; 
+    border: 1px dashed $article-border-dashed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 19px 17px 21px 21px;
+  }
+
+  &__article-text {
+    color: $cancellation-bg;
+    font-family: "Manrope-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  &__article-details {
+    margin-top: auto;
+    display: flex;
+    
+  }
+
+  &__article-btn {
+    width: 90px;
+  }
+  &__article-price {
+    color: $article-link-btn;
+    font-family: "Manrope-Medium", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+  }
+  &__popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    
+  }
+}
+
+
+@media (max-width: $tablet-width - 1) {
+  .services {
+
+    padding-top: 26px;
+
+    &__head {
+      font-size: 32px;
+      width: 100%;
+      text-align: center;
+    }
+    &__content-wrapper {
+      margin-top: 56px;
+      padding-bottom: 54px;
+      justify-content: space-around;
+    }
+    &__article {
+      max-width: 341px;
+      margin-bottom: 24px;
+    }
+    &__article-wrapper {
+      padding: 19px 14px 19px 20px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .services {
+    padding: 0;
+
+    &__head {
+      font-size: 25px;
+      line-height: 32px;
+      text-align: left;
+    }
+    &__content-wrapper {
+      margin-top: 37px;
+    }
+    &__article {
+
+      margin-bottom: 14px;
+    }
+    &__article-wrapper {
+      margin: 8px;
+      padding: 26px 14px 16px 15px;
+      height: calc(100% - 16px);
+    }
+    &__article-text {
+      font-size: 15px;
+      line-height: 22px;
+
+    }
+    &__article-btn {
+      width: 95px;
+    }    
+    &__article-price {
+      margin-left: 17px;
+    }
+  }
+}

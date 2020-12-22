@@ -1,0 +1,84 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+
+  &__input {
+    width: 190px;
+    height: 40px;
+    background: inherit;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+    padding: 0 18px;
+    margin-right: 8px;
+    color: $color;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+
+    &::placeholder {
+      color: $placeholder;
+      font-family: "Manrope-Thin", "Arial", sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+
+  &__btn {
+    margin-left: 10px;
+  }
+  &__label {
+    display: flex;
+    margin-top: 15px;
+    
+    cursor: pointer;
+  }
+
+  &__check ~ &__checkbox {
+    opacity: 0.2;
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background: inherit;
+    border: 1px solid $form-checkbox;
+    border-radius: 2px;
+    align-items: center;
+  }
+  
+  &__check:checked ~ &__checkbox{
+    opacity: 1;
+    background: inherit;
+    position: relative;
+    transition: 0.3s;
+    border: 1px solid $placeholder;
+    
+    
+    &::before {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 1px;
+      background: #b9b9b9;
+      left: 4px;
+      top: 1px;
+      transform: rotate(-50deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 1px;
+      background: $placeholder;
+      transform: rotate(55deg);
+      left: 1px;
+      top: 3px;
+    }
+  }
+  &__consent {
+    font-size: 10px;
+    line-height: 12px;
+    margin-left: 10px;
+    opacity: 0.7;
+  }
+}

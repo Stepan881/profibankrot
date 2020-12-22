@@ -1,0 +1,221 @@
+.first-screen {
+  width: 100%;
+  min-height: 800px;
+  
+  &__overlay {
+    min-height: 800px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: $first-screen-bg;
+    }
+    &::after {
+      background: $first-screen-bottom;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  } 
+
+  &__bg {
+    
+    min-height: 100%;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
+
+  &__man {
+    display: block;
+    position: absolute;
+    height: 640px;
+    width: auto;
+    left: 39px;
+    top: 156px;
+  }
+  &__content {
+    max-width: 645px;
+    margin-left: auto;
+    margin-top: 310px;
+  }
+
+  &__head {
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2), 0px -2px 10px rgba(255,255,255,0.3);
+    
+  }
+  
+  &__sub-head {
+    font-family: "Manrope-Regular", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 39px;
+    margin-bottom: 26px;
+    opacity: 0.7;
+  }
+
+  &__text {
+    font-family: "Manrope-Thin", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    margin: 0;
+    width: 66%;
+    letter-spacing: 0.4px;
+  }
+  &__text-link {
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    color: $link-c;
+  }
+  &__form {
+    margin: 16px 0;
+  }
+  &__btn {
+    display: none;
+  }
+}
+
+
+@media (max-width: $tablet-width - 1) {
+  .first-screen {
+    min-height: 900px;
+
+    &__overlay {
+      min-height: 900px;
+
+      &::after {
+        background: $first-screen-bottom-tablet;
+      }
+    }
+
+    &__img {
+      
+      min-height: 900px;
+    }
+
+    &__content {
+      max-width: 100%;    
+      min-height: 100%;
+      margin: 170px auto 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    &__man {
+      height: 398px;
+      left: 51%;
+      transform: translate(-50%);
+      top: 290px;
+    }
+
+    &__head {
+      font-size: 35px;
+    }
+    &__sub-head {
+      font-size: 20px;
+      line-height: 39px;
+    }
+    &__form {
+      display: none;
+    }
+
+    &__text {
+      font-size: 18px;
+      display: inline-block;
+      text-align: center;
+      margin: 429px auto 0;
+      width: 62%;
+      letter-spacing: 0.5px;
+    }
+    &__btn {
+      display: flex;
+      margin: 20px auto 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .first-screen {
+    
+    min-height: 922px;
+
+    &__overlay {
+      min-height: 922px;
+      &::after {
+       content: none;
+      }
+    }
+    
+    &__img {
+      min-height: 922px;
+    } 
+
+    &__man {
+      height: 238px;
+      left: 55%;
+      top: 540px;
+    }
+
+    &__content {
+      margin: 400px auto 0;
+    }
+    &__head {
+      font-size: 25px;
+      line-height: 54px;
+      
+      order: 1;
+    }
+    &__sub-head {
+      margin: 0 auto;
+      max-width: 250px;
+      order: 2;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__text {
+      margin: 17px auto 0;
+      order: 4;
+      font-size: 13px;
+      line-height: 21px;    
+      max-width: 220px;
+      width: 100%;
+    }
+
+    &__btn {
+      order: 3;
+      font-family: "Manrope-Semibold", "Arial", sans-serif;
+
+      font-size: 14px;
+      line-height: 15px;
+      margin: 272px auto 0;
+      width: auto;
+      padding: 0 21px;
+    }
+  }  
+}

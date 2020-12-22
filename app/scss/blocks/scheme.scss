@@ -1,0 +1,147 @@
+.scheme {
+  background-color: $cancellation-bg;
+  min-height: 651px;
+
+  &__wrapper-head {
+    padding-top: 115px;
+    margin-bottom: 76px;
+    position: relative;
+  }
+
+  &__head {
+    color: $color;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 0;
+  }
+
+  &__sub-head {
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 81px;
+    line-height: 130px;
+    color: transparent;
+    -webkit-text-stroke: 1px $color;
+    position: absolute;
+    opacity: 0.08;
+    top: 50px;
+    left: -100px;
+  }
+
+  &__wrapper-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 30%;
+  }
+  &__wrapper-img {
+    margin-bottom: 10px;
+  }
+  &__icon {
+    max-height: 80px;
+    width: auto;
+  }
+  &__card-head {
+    width: 88%;
+    margin: 0 0 13px 0;
+    font-family: "Manrope-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  &__card-text {
+    margin: 0;
+    font-family: "Manrope-Thin", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-width - 1) {
+  .scheme {
+
+
+    &__wrapper-head {
+      padding-top: 87px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    &__head {
+      font-size: 32px;
+      line-height: 45px;
+    }
+    &__sub-head {
+      position: static;
+      width: 100%;
+      font-size: 42px;
+      line-height: 67px;
+    }
+    &__wrapper-cards {    
+      flex-direction: column;
+      width: 100%;
+    }
+    &__card {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    &__wrapper-img {
+      margin-bottom: 17px;
+    }
+    &__card-head {
+      margin: 0 auto;
+    }
+    &__card-text {
+      margin: 6px auto;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .scheme {
+
+    &__head {
+      font-size: 25px;
+      line-height: 45px;
+      text-align: left;
+    }
+    &__sub-head {
+      font-size: 29px;
+      line-height: 46px;
+      display: flex;
+      text-align: right;
+      margin-left: auto;
+      margin-top: 49px;
+      margin-right: -7px;
+      width: 210px;
+    }
+    &__wrapper-head {
+      margin-bottom: -51px;
+    }
+    &__card {
+      margin-bottom: 67px;
+    }
+    &__wrapper-img {    
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    &__card-head {
+      margin: 0;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: left;
+    }
+    &__card-text {
+      font-family: "Manrope-Regular", "Arial", sans-serif;
+      width: 100%;
+      margin: 13px 0 0 0;
+      font-size: 13px;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+}

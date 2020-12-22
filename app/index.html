@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>PROFBANKROT</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo logo">
+          <img class="logo__img" src="./img/logo.png" alt="Логотип">
+        </div>
+        <span class="header__consultation">Бесплатная консультация круглосуточно</span>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item header__item--tel"><a class="header__link" href="tel:+79779660200">+7 977 966 0 200</a></li>
+            <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="./img/social-inst.png" alt="instagram"></a></li>
+            <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="./img/social-what.png" alt="whatsapp"></a></li>
+          </ul>
+        </nav>
+        <a class="header__btn btn" href="#">
+          <span class="btn__text">Задать вопрос юристу</span>
+        </a>
+      </div>
+    </div>    
+  </header>
+  <main class="main">
+    <section class="first-screen">
+      <div class="first-screen__overlay">
+        <img class="first-screen__img" src="./img/first-screen-bg.jpg" alt="фон">
+      </div>
+      <div class="container">
+        <div class="first-screen__wrapper">
+          <picture>
+            <source media="(min-width: 1171px)" srcset="./img/first-screen-man-desctop.png">
+            <source media="(min-width: 720px)" srcset="./img/first-screen-man-tablet.png">
+            <img class="first-screen__man" src="./img/first-screen-man-mobile.png" alt="man"> 
+          </picture>
+          <div class="first-screen__content">
+            <h1 class="first-screen__head">Списание долгов <span class="mobile-block-none">и займов</span></h1>
+            <div class="first-screen__sub-head"><span class="mobile-block">и займов</span> через банкротство физических лиц под ключ</div>
+            
+            <p class="first-screen__text">Запишитесь на бесплатную консультацию юриста сегодня
+              <a class="first-screen__text-link" href="#">и получите скидку 30 000 ₽</a>
+            </p>
+  
+            <form class="first-screen__form form" action="#" method="POST">
+              <input class="form__input" type="text" name="Name" placeholder="Имя">
+              <input class="form__input" type="tel" name="Tel" placeholder="Телефон">
+              <button class="form__btn btn-form" type="submit">Записаться</button>
+              <label class="form__label" for="consent">
+                <input class="form__check visually-hidden" type="checkbox" name="consent" id="consent">
+                <span class="form__checkbox"></span>
+                <span class="form__consent">Я согласен на обработку моих персональных данных</span>
+              </label>
+            </form>
+            <a class="first-screen__btn btn-form js-open-popup" href="#">
+              <span class="mobile-block">Получить консультацию</span>
+              <span class="mobile-block-none">Записаться</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cancellation">
+      <div class="container">
+        <img class="cancellation__arrow-bottom" src="./img/arrow-bottom.png" alt="Вниз">
+        <div class="cancellation__wrapper">
+          <div class="cancellation__head-wrapper">
+            <span class="cancellation__price-bg">357 000 000 ₽</span>
+            <h2 class="cancellation__head">Освобождение от долгов – ваше законное право</h2>
+          </div>          
+          <picture class="cancellation__wrapper-image">
+            <source media="(min-width: 1171px)" srcset="./img/cancellation-money-desctop.png">
+            <source media="(min-width: 720px)" srcset="./img/cancellation-money-tablet.png">
+            <img class="cancellation__img" src="./img/cancellation-money-mobile.png" alt="man"> 
+          </picture>
+
+          <div class="cancellation__price">
+            Списано более 
+            <span class="cancellation__price-number">357 000 000 ₽</span>
+          </div>
+          <p class="cancellation__text">
+            Спишем все долги с сохранением имущества без запрета на выезд. Гарантия 100%-го результата списания или 
+            <span class="cancellation__text-blue">мы сами выплатим ваш долг</span>
+          </p>
+          <a class="cancellation__btn btn-form js-open-popup" href="#">Хочу списать</a>
+          
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__head-wrapper">
+            <h2 class="about__head">О нас говорят</h2>
+            <span class="about__sub-head">и нас рекомендуют!</span>
+          </div>
+          <div class="about__wrapper-client">
+            <div class="about__client-number">50+</div>
+            <div class="about__client-head">Довольных клиентов&nbsp;в&nbsp;месяц</div>
+          </div>
+          <div class="about__wrapper-client">
+            <div class="about__client-number">1000+</div>
+            <div class="about__client-head">Выигранных дел за 2 года работы</div>
+          </div>
+        </div>
+        <div class="about__video-wrapper js-slider">
+
+          <div class="about__video-slider">
+            <div class="js-slide">
+              <div class="about__video">
+                <video class="about__video-player" controls> <!-- controls -->
+                  <source src="dir/film.mp4" type="video/mp4">
+                  <source src="dir/film.ogv" type="video/ogg">
+                  <source src="dir/film.webm" type="video/webm">
+                </video>
+                <img class="about__video-play" src="./img/play.png" alt="play">
+              </div>
+            </div>
+
+            <div class="about__video-player js-slide">
+              <div class="about__video">
+                <iframe style="width: 100%; height: 580px" src="https://www.youtube.com/embed/9sEo5w0Xv5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="about__video-player js-slide">
+              <div class="" style="margin: 0 auto;"><img class="" src="./img/card/img4.png" alt=""></div>
+            </div>
+ 
+          </div>
+
+          <div class="about__pagination">
+            <div class="about__pagination-btn button-prev js-prev">
+              <img class="about__btn-img about__btn-img--prew" src="./img/arrow-prew.png" alt="Назад">
+            </div>
+            <div class="about__pagination-btn button-next js-next">
+              <img class="about__btn-img about__btn-img--next" src="./img/arrow.png" alt="Вперед">
+            </div>
+          </div>
+          <div class="about__pagination-count">
+            <div class="about__pagination-count-number">
+              <div class="about__pagination-wrapper">
+                <span class="about__pagination-number-first js-active-slide">1</span>/<span class="about__pagination-number-last js-active-slide-all">10</span>
+              </div>
+              <div class="about__wrapper-name js-slide-names">
+                <span class="about__pagination-name">Глеб Должников</span>
+                <span class="about__pagination-company">Компания “Бедолаги”</span>
+              </div>
+              <div class="about__wrapper-name js-slide-names">
+                <span class="about__pagination-name">Ютуб</span>
+                <span class="about__pagination-company">Что то</span>
+              </div>
+              <div class="about__wrapper-name js-slide-names">
+                <span class="about__pagination-name">Фото</span>
+                <span class="about__pagination-company">Когото</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scheme">
+      <div class="container">
+        <div class="scheme__wrapper-head">
+          <h2 class="scheme__head">Как мы работаем</h2>
+          <span class="scheme__sub-head">ПРОЗРАЧНАЯ СХЕМА</span>          
+        </div>
+        <div class="scheme__wrapper-cards">
+
+          <div class="scheme__card">
+            <div class="scheme__wrapper-img">
+              <img class="scheme__icon" src="./img/scheme-icon-lawyer.png" alt="Иконка">
+            </div>
+            <h3 class="scheme__card-head">Оставьте заявку на&nbsp;бесплатную&nbsp;консультацию</h3>
+            <p class="scheme__card-text">В течение 5 минут с Вами свяжется Ваш личный юрист для уточнения деталей по конкретно вашему случаю и составления Договора</p>
+          </div>
+
+          <div class="scheme__card">
+            <div class="scheme__wrapper-img">
+              <img class="scheme__icon" src="./img/scheme-icon-lawyer2.png" alt="Иконка">
+            </div>
+            <h3 class="scheme__card-head">Подготовим документы&nbsp;под&nbsp;ключ</h3>
+            <p class="scheme__card-text">Мы собираем весь пакет необходимых документов для судебного и досудебного решения. Предоставляем его кредиторам и в Арбитражном суде, при необходимости</p>
+          </div>
+
+          <div class="scheme__card">
+            <div class="scheme__wrapper-img">
+              <img class="scheme__icon" src="./img/scheme-icon-gavel.png" alt="Иконка">
+            </div>
+            <h3 class="scheme__card-head">Закроем вопросы по&nbsp;вашей&nbsp;задолженности</h3>
+            <p class="scheme__card-text">Урегулируем вопросы с ФССП, налоговой, банками, УФМС и т.д. Сохраним имущество, снимем запрет на выезд и освободим от преследования коллекторами</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plan">
+      <div class="container">
+        <div class="plan__wrapper">
+          <div class="plan__content-wrapper">
+            <h3 class="plan__content-head">Индивидуальный план <span class="plan__content-sub-head">списания и&nbsp;решение ваших кредитных проблем</span></h3>
+            <picture class="plan__image-flex">
+              <source media="(min-width: 1171px)" srcset="./img/plan-desctop.png">
+              <source media="(min-width: 720px)" srcset="./img/plan-tablet.png">
+              <img class="plan__img" src="./img/plan-mobile.png" alt="План списания"> 
+            </picture>
+            <p class="plan__text">На первой бесплатной консультации мы подробно разберем ваш вопрос и подберем оптимальный вариант</p>
+            <form class="plan__form form" action="#" method="POST">
+              <input class="form__input" type="text" name="Name" placeholder="Имя">
+              <input class="form__input" type="tel" name="Tel" placeholder="Телефон">
+              <button class="form__btn btn-form" type="submit">Записаться</button>
+              <label class="form__label" for="plan">
+                <input class="form__check visually-hidden" type="checkbox" name="consent" id="plan">
+                <span class="form__checkbox"></span>
+                <span class="form__consent">Я согласен на обработку моих персональных данных</span>
+              </label>
+            </form>
+            <a class="plan__btn btn-form js-open-popup" href="#">
+              <span class="mobile-block">Записаться</span>
+              <span class="mobile-block-none">Хочу списать</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="affairs">
+      <div class="container">
+        <div class="affairs__wrapper js-slider-affairs">
+          <div class="affairs__arrow">
+            <div class="affairs__arrow-btn affairs__arrow-btn--prew js-prev"></div>
+            <div class="affairs__arrow-btn affairs__arrow-btn--next js-next"></div>
+          </div>
+          <h2 class="affairs__head">Выигранные дела</h2>
+          <div class="affairs__content-wrapper js-container">
+            <img class="affairs__seal-img" src="./img/seal.png" alt="Штамп">
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">Потребительский кредит</h3>
+                <span class="affairs__article-price">768 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Попытки рефинансировать кредит потерпели неудачу – долг копился процент за процентом</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Долг успешно списан, не смотря на замедление скорости работы суда во время пандемии</p>
+              </div>
+            </article>
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">Долг за ЖКХ</h3>
+                <span class="affairs__article-price">768 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Попытки рефинансировать кредит потерпели неудачу – долг копился процент за процентом</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Долг успешно списан, не смотря на замедление скорости работы суда во время пандемии Долг успешно списан, не смотря на замедление скорости работы суда во время пандемии</p>
+              </div>
+            </article>
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">1</h3>
+                <span class="affairs__article-price">76 800 050₽ 76 800 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, fugiat?</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Долг успешно списан, не смотря на замедление скорости работы суда во время пандемии Долг успешно списан, не смотря на замедление скорости работы суда во время пандемии</p>
+              </div>
+            </article>
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">2</h3>
+                <span class="affairs__article-price">768 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Попытки рефинансировать кредит потерпели неудачу – долг копился процент за процентом</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Долг успешно списан</p>
+              </div>
+            </article>
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">3</h3>
+                <span class="affairs__article-price">768 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Попытки рефинансировать кредит потерпели неудачу – долг копился процент за процентом</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque error accusantium, nesciunt veritatis tempora mollitia animi atque voluptatibus velit. Laudantium assumenda adipisci, eaque expedita nostrum odit magni minima esse perspiciatis.
+                Quasi illo vitae unde doloribus iure vel atque at nobis adipisci blanditiis, quam, perspiciatis odio aut necessitatibus impedit repudiandae id accusamus possimus facilis ad quod quam officia!</p>
+              </div>
+            </article>
+            <article class="affairs__article js-slide">
+              <div class="affairs__article-left">
+                <img class="affairs__article-img" src="./img/plan-list.png" alt="Документ">
+                <a class="affairs__article-link" href="#" download>
+                  <img class="affairs__article-link-ico" src="./img/pdf.png" alt="Документ">
+                  Решение суда
+                </a>
+                <a class="affairs__article-btn js-open-popup" href="#">Списать мой долг </a>
+              </div>
+              <div class="affairs__article-right">
+                <h3 class="affairs__article-head">4</h3>
+                <span class="affairs__article-price">768 050₽</span>
+
+                <span class="affairs__article-sub-head">Срок списания</span>
+                <p class="affairs__article-text">10 месяцев</p>
+                <span class="affairs__article-sub-head">Ситуация</span>
+                <p class="affairs__article-text">Попытки рефинансировать кредит потерпели неудачу – долг копился процент за процентом</p>
+                <span class="affairs__article-sub-head">Результат</span>
+                <p class="affairs__article-text">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis fugit inventore cumque eum, excepturi atque sit perspiciatis delectus laboriosam natus? Commodi repellendus enim temporibus esse voluptas necessitatibus odit maxime pariatur at deserunt.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__wrapper">
+          <h2 class="services__head">Наши услуги</h2>
+          <div class="services__content-wrapper">
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Проверка, можете ли Вы признать банкротство в МФЦ</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">5 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Анализ сделок за&nbsp;последние&nbsp;3&nbsp;года</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">10 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Подготовка к процедуре внесудебного банкротства</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">15 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Юридическое сопровождение&nbsp;банкротства</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">5 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Подача заявления и документов в&nbsp;Арбитражный суд</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">10 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Участие в первом судебном&nbsp;заседании</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">15 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Сопровождение процедуры внесудебного банкротства</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">5 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Реструктуризация долгов</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">10 000₽</span>
+                </div>
+              </div>
+            </article>
+            <article class="services__article">
+              <div class="services__article-wrapper">
+                <p class="services__article-text">Реализация имущества или&nbsp;банкротство&nbsp;«под&nbsp;ключ»</p>
+                <div class="services__article-details">
+                  <a class="services__article-btn btn-form js-open-services-popup" href="#">Детали</a>
+                  <span class="services__article-price">15 000₽</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="services__popup services-popup"> <!--popup-active-->
+        <div class="services-popup__overlay">
+          <div class="services-popup__content">
+            <h3 class="services-popup__header">Проверка, можете ли Вы признать банкротство в МФЦ</h3>
+
+            <ul class="services-popup__list">
+              <li class="services-popup__item">
+                <img class="services-popup__img" src="./img/services-popup-check.png" alt="Иконка">
+                <span class="services-popup__text">Поможем подготовить документы и подать ходатайство в суд о реструктуризации долгов</span>
+              </li>
+              <li class="services-popup__item">
+                <img class="services-popup__img" src="./img/services-popup-check.png" alt="Иконка">
+                <span class="services-popup__text">Выделим вам личного представителя для участия в Арбитражном суде</span>
+              </li>
+              <li class="services-popup__item">
+                <img class="services-popup__img" src="./img/services-popup-check.png" alt="Иконка">
+                <span class="services-popup__text">Поможем найти хорошего финансового управляющего для процедуры</span>
+              </li>
+              <li class="services-popup__item">
+                <img class="services-popup__img" src="./img/services-popup-check.png" alt="Иконка">
+                <span class="services-popup__text">Займемся документальным сопровождением процедуры реструктуризации долгов: подготовка ходатайств, отводов, заявлений и других документов</span>
+              </li>
+            </ul>
+
+            <div class="services-popup__wrapper-btn">
+              <a class="services-popup__popup-btn btn-form js-open-popup" href="#">Оставить заявку</a>
+              <div class="services-popup__wrapper">
+                <div class="services-popup__price">Цена</div>
+                <div class="services-popup__price-number">5 000₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="debts">
+      <div class="container">
+        <div class="debts__wrapper">
+          <h2 class="debts__head">Какие долги мы спишем<span class="debts__sub-head">через процедуру банкротства</span></h2>
+          <div class="debts__wrapper-contenr">
+            <ul class="debts__list">
+              <li class="debts__item">
+                <img class="debts__icon" src="./img/debts-loans.png" alt="Займы">
+                <div class="debts__item-head">Займы <span class="debts__item-sub-head">по кредитам и МФО</span></div>
+              </li>
+              <li class="debts__item">
+                <img class="debts__icon" src="./img/debts-receipts.png" alt="Расписки">
+                <div class="debts__item-head">Расписки <span class="debts__item-sub-head">физическим лицам</span></div>
+              </li>
+              <li class="debts__item">
+                <img class="debts__icon" src="./img/debts-debts.png" alt="Долги">                
+                <div class="debts__item-head">Долги <span class="debts__item-sub-head">по комм. услугам</span></div>
+              </li>
+              <li class="debts__item">
+                <img class="debts__icon" src="./img/debts-tax.png" alt="Налоги">
+                <div class="debts__item-head">Налоги, <span class="debts__item-sub-head">штрафы, пени</span></div>
+              </li>
+            </ul>
+            <div class="debts__right-block">
+              <div class="debts__view-head">ВСЕ ВИДЫ ДОЛГОВ</div>
+              <div class="debts__box">
+                <div class="debts__box-head">Процедура банкротства –</div>
+                <p class="debts__box-text">Единственный законный способ в РФ, который позволяет избавиться от долговых обязательств и начать жизнь с чистого листа!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="question">
+      <picture>
+        <source media="(min-width: 1171px)" srcset="./img/question-bg.png">
+        <img class="question__bg" alt="фон"> 
+      </picture>
+      <img class="question__hotpng" src="./img/question-hotpng.png" alt="Фемида">
+      <div class="container">
+        <div class="question__wrapper">
+          <h2 class="question__head">Задайте ваш вопрос юристу</h2>
+          <span class="question__sub-head">или запишитесь <span class="question__sub-head-blue">на бесплатную консультацию</span></span>
+          <p class="question__text">Предложим оптимальный вариант решения вашей проблемы!</p>
+          <form class="question__form form" action="#" method="POST">
+            <input class="form__input" type="text" name="Name" placeholder="Имя">
+            <input class="form__input" type="tel" name="Tel" placeholder="Телефон">
+            <button class="form__btn btn-form" type="submit">Записаться</button>
+            <label class="form__label" for="question">
+              <input class="form__check visually-hidden" type="checkbox" name="consent" id="question">
+              <span class="form__checkbox"></span>
+              <span class="form__consent">Я согласен на обработку моих персональных данных</span>
+            </label>
+          </form>
+          <a class="question__btn btn-form js-open-popup" href="#">
+            <span class="mobile-block">Записаться</span>
+            <span class="mobile-block-none">Записаться</span>
+          </a>
+        </div>
+      </div> 
+    </section>
+    <section class="command">
+      <div class="container">
+        <div class="command__wrapper">
+          <h2 class="command__head">Наша команда</h2>
+          <span class="command__text">С вами будут работать только профессионалы кредитного дела</span>
+          <div class="command__card-wrapper card">
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img1.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img2.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img3.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img4.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img5.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img6.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img7.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+            <div class="card__wrapper">
+              <img  class="card__image" src="./img/card/img8.png" alt="Фото">
+              <a class="card__name-link" href="">Даниил Дерлугьян</a>
+              <div class="card__text">Руководитель представительства</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1375506302315!2d37.65073941588121!3d55.738739000544086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae6f96ff8a7%3A0xcdfaae2ed96b3843!2z0YPQuy4g0JHQvtC70YzRiNC40LUg0JrQsNC80LXQvdGJ0LjQutC4LCAyLCDQnNC-0YHQutCy0LAsIDExNTE3Mg!5e0!3m2!1sru!2sru!4v1603543621971!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__card">
+          <div class="footer__border">
+            <div class="footer__logo logo">
+              <img class="logo__img" src="./img/logo.png" alt="Логотип">
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item footer__item--tel"><a class="footer__link" href="tel:+78002006848">8 800 200 68 48</a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><img class="footer__icon" src="./img/social-inst.png" alt="instagram"></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><img class="footer__icon" src="./img/social-what.png" alt="whatsapp"></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><img class="footer__icon" src="./img/social-vk.png" alt="vkontakte"></a></li>
+              </ul>
+            </nav>
+            <address class="footer__address">г. Москва,<br class="footer__br">ул. Б. Каменщики, д. 2</address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup"> <!--  popup__active -->
+    <div class="popup__overlay">
+      <div class="popup__wrapper">
+        <div class="popup__logo logo">
+          <img class="logo__img" src="./img/logo-dark.png" alt="Логотип">
+        </div>
+        <h3 class="popup__head">Запишитесь на бесплатную</h3>
+        <span class="popup__sub-head">консультацию юриста сегодня</span>
+        <p class="popup__text">и получите скидку на&nbsp;наши&nbsp;услуги 30 000₽</p>
+        <form class="popup__form form" action="#" method="POST">
+          <input class="form__input" type="text" name="Name" placeholder="Имя">
+          <input class="form__input" type="tel" name="Tel" placeholder="Телефон">
+          <button class="form__btn btn-form" type="submit">Оставить заявку</button>
+          <label class="form__label" for="form-popup">
+            <input class="form__check visually-hidden" type="checkbox" name="consent" id="form-popup">
+            <span class="form__checkbox"></span>
+            <span class="form__consent">Я согласен на обработку моих персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+  <script src="./js/slider-about.js"></script>
+  <script src="./js/slider-affairs.js"></script>
+</body>
+</html>

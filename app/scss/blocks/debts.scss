@@ -1,0 +1,268 @@
+.debts {
+  background-color: $cancellation-bg;
+  min-height: 612px;
+
+  &__wrapper {
+    padding-top: 122px;
+  }
+
+  &__head {
+    color: $article-link-btn;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 34px;
+    line-height: 45px;
+    margin: 0;
+  }
+  &__sub-head {
+    color: $color;
+    display: block;
+  }
+
+  &__wrapper-contenr {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 685px;
+    margin-top: 80px;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: row;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 56px;
+  
+    &:nth-child(1) {
+      .debts__icon {
+        width: 80px;
+        height: 80px;
+      }
+    }  
+    &:nth-child(2) {
+      .debts__icon {
+        width: 63px;
+        height: 73px;
+
+      }
+    }
+    &:nth-child(3) {
+      .debts__icon {
+        width: 92px;
+        height: 63px;
+      }
+    }  
+    &:nth-child(4) {
+      .debts__icon {
+        width: 83px;
+        height: 57px;
+      }
+    }
+  }
+  &__icon {
+    display: block;
+    align-items: center;
+  }
+  &__item-head {
+    display: block;
+    color: $article-link-btn;
+    font-family: "Manrope-Semibold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 27px;    
+    margin-left: 25px;
+    align-self: center;
+  }
+  &__item-sub-head {
+    display: flex;
+    color: $color;
+  }
+
+  &__right-block {
+    width: 42%;
+    position: relative;
+  }
+
+  &__box {
+    min-height: 200px;
+    max-width: 487px;
+    border: 5px solid #2d4062;
+    border-radius: 5px;
+    background-color: $cancellation-bg;
+    z-index: 1;
+    margin-top: 78px;
+    padding: 29px 48px;
+    margin-left: auto;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__view-head {
+    position: absolute;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 81px;
+    line-height: 91px;
+    opacity: 0.08;
+    color: transparent;
+    -webkit-text-stroke: 1px $color;
+    top: -80px;
+    right: -90px;
+    text-align: right;
+    z-index: 0;
+  }
+
+  &__box-head {
+    color: $color;
+    font-family: "Manrope-Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 45px;
+  }
+  &__box-text {
+    margin: 0;
+    color: $color;
+    font-family: "Manrope-Regular", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+  }
+}
+
+
+@media (max-width: $tablet-width - 1) {
+  .debts {
+
+
+    &__wrapper {
+      padding-top: 80px;
+      padding-bottom: 73px;
+    }
+    &__head {
+      font-size: 28px;
+      line-height: 40px;
+      text-align: center;
+    }
+    &__wrapper-contenr {
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      margin: 52px auto 5px;
+    }
+    &__item {
+      margin: 0 auto 43px;
+      max-width: 331px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 25px;
+    }
+    &__icon {
+      display: flex;
+      margin: 0 auto;
+    }
+    &__item-head {
+      width: 190px;
+    }
+    &__right-block {
+      width: 100%;
+    }
+    &__view-head {
+      width: 100%;
+      position: static;
+      font-size: 59px;
+      line-height: 66px;
+      text-align: center;
+    }
+    &__box {
+      margin: -22px auto 0;
+      max-width: 521px;
+      padding: 26px 60px 26px 71px;
+    }
+    &__box-text {
+      margin-top: 11px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width - 1) {
+  .debts {
+
+    &__wrapper {
+      padding-top: 68px;
+    }
+    &__head {
+      font-size: 23px;
+      line-height: 33px;
+      text-align: left;
+    }
+    &__list {
+      width: 100%;
+      margin: 43px auto 5px;
+    }
+    &__item {
+      margin: 0 auto 35px;
+      padding-left: 0;
+      &:nth-child(1) {
+        
+        .debts__icon {
+          width: 61px;
+          height: 62px;
+        }
+      }  
+      &:nth-child(2) {
+        order: 3;
+        .debts__icon {
+          width: 53px;
+          height: 61px;
+  
+        }
+      }
+      &:nth-child(3) {
+        order: 1;
+        .debts__icon {
+          width: 66px;
+          height: 45px;
+        }
+      }  
+      &:nth-child(4) {
+        order: 2;
+        .debts__icon {
+          width: 68px;
+          height: 47px;
+        }
+      }
+    }
+    &__icon {
+      margin: 0 auto;
+      align-self: flex-end;
+    }
+    &__item-head {
+      margin-left: 0px;
+      width: 229px;
+      padding-left: 11px;
+    }
+    &__view-head {
+      display: none;
+    }
+    &__box {
+      margin: 8px auto 0;
+      padding: 17px 16px 27px 17px;
+    }
+    &__box-head {
+      font-size: 18px;
+      line-height: 45px;
+    }
+    &__box-text {
+
+      margin-top: 5px;
+      font-size: 13px;
+      line-height: 26px;
+    }
+  }
+
+}
